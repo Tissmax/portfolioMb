@@ -1,0 +1,49 @@
+.nav {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 15px;
+    padding-right: 3%;
+    margin-bottom: 3%;
+    padding-top: 6%;
+
+
+    .rs {
+        position: relative;
+        height: 100px;
+        width: 100px;
+    }
+    img, svg {
+        position: absolute;
+    }
+    img {
+        height: 70px;
+        width: 70px;
+        top: 10px;
+        left: 10px;
+        z-index: 1;
+    }
+    svg {
+        z-index: 0;
+        animation: dash 10s linear infinite
+    }
+    .hover {
+        fill: #F88A25;
+        stroke: none;
+        width: 110px;
+        height: 110px;
+        right: 8px;
+        bottom: 6px;
+    }
+
+
+    @keyframes dash {
+        from {
+            stroke-dashoffset: 90;
+        }
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+
+}
+
