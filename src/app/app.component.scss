@@ -14,11 +14,66 @@ p {
     z-index: 100;
 }
 
-#boutonsBasDePage {
+#hautDePage {
+    height: 100vh;
+    background-color: #0C1325;
+
+    .pragrapheIntro {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+        padding: 15% 14% 12% 0%;
+        
+    }
+    
+    #bonjour {
+        font-size: 140px;
+        font-weight: 600;
+        letter-spacing: -4px;
+        color: #F88A25;
+        padding-right: 240px;
+        margin: 0 0 0 0;
+        z-index: 1;
+    }
+    .cercles {
+        position: relative;
+        bottom: 150px;
+        right: 400px;
+        z-index: 0;
+        
+        .cerclePetit, .cercleGrand {
+            position: absolute;
+        }
+        
+        .cerclePetit {
+            top: 210px;
+            left: 180px;
+            stroke-dasharray: 0;
+            stroke-dashoffset: 247;
+            animation: dash 10s linear infinite;
+        }
+    
+        .cercleGrand {
+            stroke-dashoffset: 382;
+            stroke-dashoffset: 0;
+            animation: dash2 15s linear reverse infinite;
+        }
+        .hoverCercle {
+            animation: fadeIn 0.5s;
+            fill: #F88A25;
+            stroke: #0C1325;
+        }
+    }
+}
+
+
+#basDePage {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0;
+    height: 100vh;
 
     h1, h2 {
         font-size: 100px;
@@ -72,7 +127,7 @@ p {
       }
 
     .mesProjets, .monParcours {
-        height: 50vh;
+        height: 50%;
         width: 100vw;
         display: flex;
         flex-direction: column;
@@ -89,53 +144,7 @@ p {
     }
 }
 
-.pragrapheIntro {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    align-items: center;
-    padding: 15% 14% 10% 0%;
-    
-}
-
-#bonjour {
-    font-size: 140px;
-    font-weight: 600;
-    letter-spacing: -4px;
-    color: #F88A25;
-    padding-right: 240px;
-    margin: 0 0 0 0;
-    z-index: 1;
-}
-.cercles {
-    position: relative;
-    bottom: 150px;
-    right: 400px;
-    z-index: 0;
-    
-    .cerclePetit, .cercleGrand {
-        position: absolute;
-    }
-    
-    .cerclePetit {
-        top: 210px;
-        left: 180px;
-        stroke-dasharray: 0;
-        stroke-dashoffset: 247;
-        animation: dash 10s linear infinite;
-    }
-
-    .cercleGrand {
-        stroke-dashoffset: 382;
-        stroke-dashoffset: 0;
-        animation: dash2 15s linear reverse infinite;
-    }
-    .hoverCercle {
-        animation: fadeIn 0.5s;
-        fill: #F88A25;
-        stroke: #0C1325;
-    }
-}   
+   
 
 
 

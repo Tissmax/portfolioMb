@@ -1,25 +1,27 @@
-<div class="pragrapheIntro">
-    <div class="cercles">
-        <div >
-            <svg  (mouseenter)="onHover()" (mouseleave)="noHover()" [class]="cercleGrand" width="382" height="382" viewBox="0 0 382 382" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="191" cy="191" r="190.5" stroke="white" stroke-dasharray="2 4 6 8"/>
+<section id="hautDePage">
+    <div class="pragrapheIntro">
+        <div class="cercles">
+            <div >
+                <svg  (mouseenter)="onHover()" (mouseleave)="noHover()" [class]="cercleGrand" width="382" height="382" viewBox="0 0 382 382" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="191" cy="191" r="190.5" stroke="white" stroke-dasharray="2 4 6 8"/>
+                </svg>
+            </div>
+            <svg class="cerclePetit" width="247" height="247" viewBox="0 0 247 247" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="123.5" cy="123.5" r="123" stroke="white" stroke-dasharray="2 4 6 8"/>
             </svg>
-        </div>
-        <svg class="cerclePetit" width="247" height="247" viewBox="0 0 247 247" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="123.5" cy="123.5" r="123" stroke="white" stroke-dasharray="2 4 6 8"/>
-        </svg>
-    </div>    
-    <h1 id="bonjour" (mouseenter)="onHover()" (mouseleave)="noHover()" >
-        <span [style]="bonjoStyle">Bonjo</span>ur
-    </h1>
-    <p (mouseenter)="onHover()" (mouseleave)="noHover()">
-        je m'appelle Mathis j'ai 26 ans et je <br />
-        souhaite devenir développeur
-    </p>
-</div>
-    
-<app-nav></app-nav>
-<section id="boutonsBasDePage" >
+        </div>    
+        <h1 id="bonjour" (mouseenter)="onHover()" (mouseleave)="noHover()" >
+            <span [style]="bonjoStyle">Bonjo</span>ur
+        </h1>
+        <p (mouseenter)="onHover()" (mouseleave)="noHover()">
+            je m'appelle Mathis j'ai 26 ans et je <br />
+            souhaite devenir développeur
+        </p>
+    </div>
+        
+    <app-nav class="rs"></app-nav>
+</section>
+<section id="basDePage">
     <div class="mesProjets" (click)="showingProjets()" [ngClass]="{'blur': parcoursIsShown == true}">
         <button>
             <h1 (click)="inc(projetsIsClicked)" class="hover">Mes Projets</h1>
