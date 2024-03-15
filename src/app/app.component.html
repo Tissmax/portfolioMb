@@ -21,12 +21,13 @@
         
     <app-nav class="rs"></app-nav>
 </section>
+<app-parcours-cards class="card" *ngIf="toogleParcours"></app-parcours-cards>
+<app-projet-cards class="card" *ngIf="toogleProjet"></app-projet-cards>
 <section id="basDePage">
     <div class="mesProjets" (click)="showProjet()" [ngClass]="{'blur': toogleParcours == true}">
         <button>
             <h1 class="hover">Mes Projets</h1>
-        </button> 
-        
+        </button>
         </div>
     <div class="monParcours" (click)="showParcours()" [ngClass]="{'blur': toogleProjet == true}">
         <button>
@@ -34,5 +35,3 @@
         </button>
     </div>
 </section>
-<app-projet-cards class="card" *ngIf="toogleProjet"></app-projet-cards>
-<app-parcours-cards class="card" *ngIf="toogleParcours"></app-parcours-cards>

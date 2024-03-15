@@ -1,20 +1,29 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { CardDataService } from '../card-data.service';
+import { CommonModule } from '@angular/common';
+import { NgFor } from '@angular/common';
+import { Card } from '../card';
 
 @Component({
   selector: 'app-projet-cards',
   standalone: true,
-  imports: [],
+  imports: [
+    CommonModule,
+    NgFor
+  ],
+  providers: [ CardDataService ],
   templateUrl: './projet-cards.component.html',
   styleUrl: './projet-cards.component.scss'
 })
-export class ProjetCardsComponent {
-  jsonDataResult: any;
 
-  constructor(private http: HttpClient) {
-    this.http.get('assets/json/data.json').subscribe((res)=> {
-      this.jsonDataResult = res;
-      console.log('---result :: ', this.jsonDataResult);
-    })
+export class ProjetCardsComponent {
+
+  cards!: Card[];
+  
+  constructor(private cardService: CardDataService) { }
+
+  ngOnInit(): void {
+    this.cards = this.cardService.getCardProjets();
   }
+
 }

@@ -1,1 +1,7 @@
-<p>parcours-cards works!</p>
+<section *ngFor="let card of cards"> 
+        <div class="card{{card.id}} single-card">
+            <h1>{{card.title}}</h1>
+            <p> {{card.text}} </p>
+            <button></button>
+        </div>
+</section>

@@ -1,1 +1,6 @@
-<p>projet-cards works!</p>
+<section *ngFor="let card of cards"> 
+    <div class="single-card{{card.id}}; single-card">
+        <h1>{{card.title}}</h1>
+        <p> {{card.text}} </p>
+    </div>
+</section>

@@ -10,9 +10,6 @@ p {
     filter: blur(4px);
 }
 
-.card {
-    z-index: 100;
-}
 
 #hautDePage {
     height: 100vh;
@@ -74,6 +71,7 @@ p {
     align-items: center;
     margin: 0;
     height: 100vh;
+
 
     h1, h2 {
         font-size: 100px;

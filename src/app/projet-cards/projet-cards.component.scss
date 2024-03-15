@@ -1,0 +1,17 @@
+.single-card {
+    height: 400px;
+    width: 250px;
+    background-color: black;
+    border-radius: 10px;
+    border: 5px solid beige;
+    padding: 10px 10px;
+    position: absolute;
+    z-index: 1;
+    
+}
+
+section {
+    position: absolute;
+    top: 125vh;
+    left: 40vw;
+}

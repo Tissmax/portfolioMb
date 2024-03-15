@@ -1,0 +1,20 @@
+
+section {
+    position: absolute;
+    top: 140vh;
+    left: 40vw;
+    
+    .single-card {
+        height: 400px;
+        width: 250px;
+        background-color: black;
+        border-radius: 10px;
+        border: 5px solid beige;
+        padding: 10px 10px;
+        position: absolute;
+        z-index: 2;
+        transform-origin: bottom left;
+        
+    }
+
+}
