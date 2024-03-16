@@ -12,9 +12,26 @@ section {
         border: 5px solid beige;
         padding: 10px 10px;
         position: absolute;
-        z-index: 2;
+        z-index: 5;
         transform-origin: bottom left;
         
     }
+    .left1{
+        transform: rotate(-10deg);
+        z-index: 4;
+    }
+    .left2{
+         transform: rotate(-20deg);
+        z-index: 3;
+    }
+    .left3{
+         transform: rotate(-30deg);
+        z-index: 2;
+    }
+    .left4{
+         transform: rotate(-40deg);
+        z-index: 1;
+    }
+    
 
 }
