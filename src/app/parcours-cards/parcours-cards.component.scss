@@ -8,38 +8,54 @@ section {
     .single-card {
         height: 400px;
         width: 250px;
-        background-color: black;
+        background-color: #fff;
         border-radius: 10px;
-        border: 5px solid beige;
+        border: #0C1325 solid 1px;
+        color: black;
+        outline-offset: -30px;
         padding: 10px 10px;
         position: absolute;
         z-index: 5;
         transform-origin: bottom left;
         
+    }   h1 {
+        font-size: 15px;
+        color: rgb(77, 77, 77);
+        font-family: 'Courier New', Courier, monospace;
+    }   h2 {
+        color: #F88A25;
+    }   p {
+        color: #0C1325;
+        font-size: 16px;
+    }   span {
+        color: rgb(77, 77, 77);
+        font-family: "Monomaniac one";
+
     }
     .middle{
         transform: rotate(0deg);
+        box-shadow: -37px -26px 40px -23px rgba(0,0,0,0.1);
         z-index: 5;
     }
     .left1{
-        transform: rotate(-10deg);
+        transform: rotate(-10deg);        
         z-index: 4;
         transition: 0.3s;
     }
     .left2{
-         transform: rotate(-20deg);
+        transform: rotate(-20deg);
         z-index: 3;
         transition: 0.3s;
         
     }
     .left3{
-         transform: rotate(-30deg);
+        transform: rotate(-30deg);
         z-index: 2;
         transition: 0.3s;
 
     }
     .left4{
-         transform: rotate(-40deg);
+        transform: rotate(-40deg);
         z-index: 1;
         transition: 0.3s;
 

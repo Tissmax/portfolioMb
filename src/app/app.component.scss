@@ -1,4 +1,6 @@
-
+span {
+    color: #F88A25;
+}
 p {
     font-size: 40px;
     margin: 0 0 0 0;
@@ -92,36 +94,14 @@ p {
 
     }
 
-    .hover {
-        border: 8px solid white;
-        -webkit-mask: 
-          conic-gradient(from 180deg at top 8px right 8px, #0000 90deg,#000 0)
-           var(--_i,200%) 0  /200% var(--_i,8px) border-box no-repeat,
-          conic-gradient(at bottom 8px left  8px,  #0000 90deg,#000 0)
-           0   var(--_i,200%)/var(--_i,8px) 200% border-box no-repeat,
-          linear-gradient(#000 0 0) padding-box no-repeat;
-        transition: .3s, -webkit-mask-position .3s .3s;
-      }
       .hover:hover {
-        --_i: 100%;
         color: #0C1325;
-        transition: .3s, -webkit-mask-size .3s .3s;
+        transition: 0.5s;
       }
 
-      .hover1 {
-        border: 8px solid #F88A25;
-        -webkit-mask: 
-          conic-gradient(from 180deg at top 8px right 8px, #0000 90deg,#000 0)
-           var(--_i,200%) 0  /200% var(--_i,8px) border-box no-repeat,
-          conic-gradient(at bottom 8px left  8px,  #0000 90deg,#000 0)
-           0   var(--_i,200%)/var(--_i,8px) 200% border-box no-repeat,
-          linear-gradient(#000 0 0) padding-box no-repeat;
-        transition: .3s, -webkit-mask-position .3s .3s;
-      }
       .hover1:hover {
-        --_i: 100%;
         color: white;
-        transition: .3s, -webkit-mask-size .3s .3s;
+        transition: 0.5s;
       }
 
     .mesProjets, .monParcours {
