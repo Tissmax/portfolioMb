@@ -10,9 +10,10 @@ section {
         width: 250px;
         background-color: #fff;
         border-radius: 10px;
-        border: #0C1325 solid 1px;
+        border: #0C1325 solid 4px;
+        outline: #fff solid 5px;
+        outline-offset: 0px;
         color: black;
-        outline-offset: -30px;
         padding: 10px 10px;
         position: absolute;
         z-index: 5;

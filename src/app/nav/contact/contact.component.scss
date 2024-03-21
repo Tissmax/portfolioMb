@@ -1,0 +1,40 @@
+
+section {
+    position: absolute;
+    bottom: 18vh;
+    left: 86.5vw;
+    background-color: #F88A25;
+    height: 200px;
+    width: 200px;
+    border-radius: 6% 94% 7% 93% / 75% 7% 93% 25% ;
+    padding: 20px;
+    
+    article {
+        display: grid;
+        grid-template-rows: 1fr repeat(2);
+        margin-top: 25px;
+        gap: 10px;
+    } div {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    i {
+        font-size: 30px;
+        color: #0C1325;
+        padding-right: 10px;
+        
+    } 
+    i, p {
+        margin: 0;
+    } a {
+        display: flex;
+        flex-direction: row;
+    }
+    .mobile {
+        font-size: 50px;
+    }
+    .tel {
+        padding-top: 10px;
+    }
+} 

@@ -1,6 +1,10 @@
 span {
     color: #F88A25;
 }
+.bleuHover {
+    color: #0C1325;
+    transition: .5s;
+}
 p {
     font-size: 40px;
     margin: 0 0 0 0;
@@ -22,7 +26,7 @@ p {
         flex-direction: column;
         margin: auto;
         align-items: center;
-        padding: 15% 14% 12% 0%;
+        padding: 30vh 12vw 15vh 0vw;
         
     }
     
@@ -61,7 +65,8 @@ p {
         .hoverCercle {
             animation: fadeIn 0.5s;
             fill: #F88A25;
-            stroke: #0C1325;
+            stroke-opacity: 0;
+            transition: .2s;
         }
     }
 }

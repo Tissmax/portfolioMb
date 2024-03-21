@@ -11,14 +11,13 @@
             </svg>
         </div>    
         <h1 id="bonjour" (mouseenter)="onHover()" (mouseleave)="noHover()" >
-            <span [style]="bonjoStyle">Bonjo</span>ur
+            <span [ngClass]="{'bleuHover': hovered == true}">Bonjo</span>ur
         </h1>
         <p (mouseenter)="onHover()" (mouseleave)="noHover()">
             je m'appelle Mathis j'ai 26 ans et je <br />
             souhaite devenir développeur
         </p>
     </div>
-        
     <app-nav class="rs"></app-nav>
 </section>
 <app-parcours-cards class="card" *ngIf="toogleParcours"></app-parcours-cards>

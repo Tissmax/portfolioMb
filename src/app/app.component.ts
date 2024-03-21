@@ -1,10 +1,11 @@
-import { Component, EventEmitter } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { NavComponent } from './nav/nav.component';
 import { ProjetCardsComponent } from './projet-cards/projet-cards.component'
 import { ParcoursCardsComponent } from './parcours-cards/parcours-cards.component';
 import { HttpClientModule } from '@angular/common/http';
+
 
 
 
@@ -17,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule, 
     ProjetCardsComponent, 
     ParcoursCardsComponent,
+
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
@@ -26,12 +28,13 @@ export class AppComponent {
 
   title = 'Mathis Basier';
 
-  bonjoStyle: string="";
+  hovered: boolean = false;
   cercleGrand: string="cercleGrand";
   
   //on regarde sur quelle bouton l'utilisateur clic
   toogleParcours: boolean = false;
   toogleProjet: boolean = false;
+
 
   showProjet() {
     if (this.toogleProjet == false && this.toogleParcours == false) {
@@ -50,12 +53,14 @@ export class AppComponent {
   }
  
   onHover() {
-    this.bonjoStyle="color: #0C1325;";
+    this.hovered = !this.hovered;
     this.cercleGrand="cercleGrand hoverCercle";
+    
   }
   noHover() {
-    this.bonjoStyle="color: #F88A25;";
+    this.hovered = !this.hovered;
     this.cercleGrand="cercleGrand";
+
   }
 
  

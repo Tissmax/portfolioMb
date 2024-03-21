@@ -1,35 +1,50 @@
 .nav {
     display: flex;
-    flex-direction: row-reverse;
-    gap: 15px;
-    margin-right: 5%;
+    flex-direction: column;
+    gap: 25px;
+    padding-left: 95vw;
+    width: 80px;
+    height: 500px;
 
     .rs {
         position: relative;
-        height: 100px;
-        width: 100px;
+        height: 50px;
+        width: 50px;
     }
-    img, svg {
+    img, svg, i {
         position: absolute;
+        top: 0;
+        bottom: 0;
     }
     img {
-        height: 70px;
-        width: 70px;
-        top: 10px;
-        left: 10px;
+        height: 50px;
+        width: 50px;
+        top: 8px;
+        left: 9px;
         z-index: 1;
+    }
+    i{
+        top: 9px;
+        left: 12px;
+        z-index: 1;
+        
+    }
+    i:hover {
+        cursor: pointer;
     }
     svg {
         z-index: 0;
         animation: dash 10s linear infinite
+        
     }
-    .hover {
+    .hover, .clicked {
         fill: #F88A25;
-        stroke: none;
-        width: 110px;
-        height: 110px;
-        right: 8px;
-        bottom: 6px;
+        stroke-opacity: 0;
+        width: 75px;
+        height: 75px;
+        top: -1rem;
+        left: -.8rem;
+        transition: .1s;
     }
 
 
