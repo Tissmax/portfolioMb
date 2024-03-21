@@ -1,5 +1,5 @@
 <section *ngFor="let card of cards"> 
-    <div class="single-card{{card.id}}; single-card">
+    <div class="single-card{{card.id}}; single-card" (click)="cardShuffle(card.id)">
         <h1>{{card.title}}</h1>
         <p> {{card.text}} </p>
     </div>

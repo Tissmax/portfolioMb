@@ -28,7 +28,7 @@ export class ProjetCardsComponent {
     this.cards = this.cardService.getCardProjets();
   }
 
-  cardShuffleLeft(cardId: number) {
+  cardShuffle(cardId: number) {
 
     // incrémentation click
         this.i++;

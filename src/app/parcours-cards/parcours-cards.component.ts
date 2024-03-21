@@ -27,7 +27,7 @@ export class ParcoursCardsComponent {
     
   }
   
-  cardShuffleLeft(cardId: number) {
+  cardShuffle(cardId: number) {
 
 // incrémentation click
     this.i++;
