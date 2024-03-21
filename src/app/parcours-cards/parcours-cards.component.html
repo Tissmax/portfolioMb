@@ -1,6 +1,7 @@
 <section *ngFor="let card of cards"> 
-        <div class="single-card" id="card{{card.id}}" (click)="redistributionCard(card.id)">
+        <div class="single-card right{{card.id}}" id="card{{card.id}}" (click)="cardShuffleLeft(card.id)">
             <h1>{{card.title}}</h1>
             <p> {{card.text}} </p>
+            <button>Reset</button>
         </div>
 </section>

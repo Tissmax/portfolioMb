@@ -8,8 +8,8 @@ p {
 
 .blur {
     filter: blur(4px);
+    transition: 0.4s;
 }
-
 
 #hautDePage {
     height: 100vh;

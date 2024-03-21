@@ -7,6 +7,7 @@ import { ParcoursCardsComponent } from './parcours-cards/parcours-cards.componen
 import { HttpClientModule } from '@angular/common/http';
 
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -18,15 +19,15 @@ import { HttpClientModule } from '@angular/common/http';
     ParcoursCardsComponent,
   ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
+  
+
   title = 'Mathis Basier';
 
   bonjoStyle: string="";
   cercleGrand: string="cercleGrand";
-  parcoursIsShown: boolean=false;
-  projetsIsShown: boolean=false;
   
   //on regarde sur quelle bouton l'utilisateur clic
   toogleParcours: boolean = false;
