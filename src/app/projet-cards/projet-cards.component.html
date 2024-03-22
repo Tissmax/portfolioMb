@@ -1,6 +1,11 @@
-<section *ngFor="let card of cards"> 
-    <div class="right{{card.id}} single-card" id="card{{card.id}}" (click)="cardShuffle(card.id)">
-        <h1>{{card.title}}</h1>
-        <p> {{card.text}} </p>
-    </div>
-</section>
+<main *ngFor="let card of cards"> 
+    <section>
+        <div class="right{{card.id}} single-card" id="card{{card.id}}" (click)="cardShuffle(card.id)">
+            <h2>{{card.title}}</h2>
+            <p> {{card.description}} </p>
+            <h1> {{card.subTitle}} </h1>
+        </div>
+        <button class="" (click)="showProjet(0)">START</button>
+    </section>
+</main>
+<app-appli-meteo [showMeteo]="showMeteo"></app-appli-meteo>

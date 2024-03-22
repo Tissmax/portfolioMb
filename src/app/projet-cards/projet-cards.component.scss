@@ -1,16 +1,35 @@
-section {
+main {
     position: absolute;
     top: 130vh;
     left: 40vw;
+
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+    button {
+        z-index: 6;
+        width: 200px;
+        height: 80px;
+        cursor: pointer;
+        margin-left: 20%;
+        margin-top: 170%;
+        font-size: 30px;
+        font-family: 'Courier New', Courier, monospace;
+        color: rgb(77, 77, 77);
+        border: none;
+        background: none;
+    }
     
     .single-card {
         height: 400px;
         width: 250px;
         background-color: #fff;
         border-radius: 10px;
-        border: #0C1325 solid 1px;
+        border: #0C1325 solid 4px;
+        outline: #fff solid 5px;
+        outline-offset: 0px;
         color: black;
-        outline-offset: -30px;
         padding: 10px 10px;
         position: absolute;
         z-index: 5;

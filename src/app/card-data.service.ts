@@ -132,10 +132,10 @@ getCardProjets(): Card[]{
     },
     {
       id: 4,
-      title: "La météo du jour",
-      subTitle: "",
-      text: "aaa",
-      description: "",
+      title: "La météo en temps réél",
+      subTitle: "Technologie utilisées",
+      text: "",
+      description: "Cette application utilise une api distante pour collecter des informations sur la météo du jour dans la ville demandée",
       iconUrl: [
         {id: 0, url: ""},
         {id: 1, url: ""},

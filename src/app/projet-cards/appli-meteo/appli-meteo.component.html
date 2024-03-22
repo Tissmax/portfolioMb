@@ -1,0 +1,11 @@
+<main>
+    <div id="elem" *ngIf="showMeteo">
+        <input type="text" [value]="ville">
+        <h1 id="titre">Weather in {{ville}}</h1>
+        <h2 id="temperature"> {{temp}}°C </h2>
+        <img id="icon" [src]="fetchIcon" [alt]="conditions"> 
+        <p id="humidity">Humidity: {{fetchHumidity}}% </p>     
+    </div>
+</main>
+
+
