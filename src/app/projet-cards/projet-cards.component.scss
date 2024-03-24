@@ -20,6 +20,15 @@ main {
         border: none;
         background: none;
     }
+    .logos {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    } 
     
     .single-card {
         height: 400px;

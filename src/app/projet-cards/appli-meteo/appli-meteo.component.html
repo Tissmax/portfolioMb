@@ -1,9 +1,13 @@
-<main>
-    <div id="elem" *ngIf="showMeteo">
-        <input type="text" [value]="ville">
-        <h1 id="titre">Weather in {{ville}}</h1>
-        <h2 id="temperature"> {{temp}}°C </h2>
+<main *ngIf="showMeteo">
+    <div id="elem">
+        <form (submit)="onSubmit()">
+            <input [(ngModel)]="ville" type="text" name="ville" placeholder="City name" id="abc" (keydown.enter)="onKeydown($event)">
+            <div  *ngIf="notCity" class="alert" > {{error}} </div>
+        </form>
+        <i class="material-icons" (click)="showMeteo=!showMeteo" >&#xe14c;</i>
+        <h1 id="titre">Weather in {{ville || "Bordeaux"}}</h1>
         <img id="icon" [src]="fetchIcon" [alt]="conditions"> 
+        <h2 id="temperature"> {{temp}}°C </h2>
         <p id="humidity">Humidity: {{fetchHumidity}}% </p>     
     </div>
 </main>

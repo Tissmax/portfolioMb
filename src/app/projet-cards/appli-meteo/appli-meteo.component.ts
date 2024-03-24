@@ -1,29 +1,41 @@
-import { Component, Input, Renderer2 } from '@angular/core';
+import { Component, Input, Renderer2, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { EventEmitter } from 'stream';
 
 @Component({
   selector: 'app-appli-meteo',
   standalone: true,
   imports: [
     CommonModule,
+    FormsModule
   ],
   templateUrl: './appli-meteo.component.html',
   styleUrl: './appli-meteo.component.scss'
 })
 export class AppliMeteoComponent {
-  
-  @Input() showMeteo: boolean = false;
 
+  error: any = {};
 
   constructor(private renderer: Renderer2) {}
+  
+  onKeydown(event: any) {
+    this.fetchMeteo(this.ville)
+  }
 
-  ville: string = "";
+
+  @Input() ville: string = "Bordeaux"
+  onSubmit() {
+    return this.ville;
+  }
+  @Input() showMeteo: boolean = false;
+
+  notCity : boolean = false;
   temp: number = 0;
   fetchIcon: string = "";
   conditions: string = "";
   fetchHumidity: string = "";
   update: string ="";
-
 
 async fetchMeteo(ville: string) {
 
@@ -46,7 +58,8 @@ async fetchMeteo(ville: string) {
 
 //On attrappe le message d'erreur et on l'affiche
     } catch (error) {
-      console.error(error);
+     this.notCity = !this.notCity
+     this.error = error
     }
 
  }

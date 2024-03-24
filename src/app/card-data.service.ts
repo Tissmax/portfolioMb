@@ -137,10 +137,10 @@ getCardProjets(): Card[]{
       text: "",
       description: "Cette application utilise une api distante pour collecter des informations sur la météo du jour dans la ville demandée",
       iconUrl: [
-        {id: 0, url: ""},
-        {id: 1, url: ""},
-        {id: 2, url: ""},
-        {id: 3, url: ""}
+        {id: 0, url: "/assets/angular.png"},
+        {id: 1, url: "/assets/css.png"},
+        {id: 2, url: "/assets/html.png"},
+        {id: 3, url: "/assets/javascript.png"}
       ]
   
     },

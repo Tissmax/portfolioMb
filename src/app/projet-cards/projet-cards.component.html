@@ -4,8 +4,14 @@
             <h2>{{card.title}}</h2>
             <p> {{card.description}} </p>
             <h1> {{card.subTitle}} </h1>
+            <div class="logos">
+                <img src="{{card.iconUrl[0].url}}">
+                <img src="{{card.iconUrl[1].url}}">
+                <img src="{{card.iconUrl[2].url}}">
+                <img src="{{card.iconUrl[3].url}}">
+            </div> 
         </div>
-        <button class="" (click)="showProjet(0)">START</button>
+        <button class="" (click)="showProjet(card.id)">START</button>
     </section>
 </main>
-<app-appli-meteo [showMeteo]="showMeteo"></app-appli-meteo>
+<app-appli-meteo [showMeteo]="showMeteo" [ville]="ville"></app-appli-meteo>

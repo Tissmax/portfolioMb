@@ -24,6 +24,7 @@ export class ProjetCardsComponent {
   cards!: Card[];
   i: number = 0;
   showMeteo: boolean = false;
+  ville: string = "";
 
   @ViewChild(AppliMeteoComponent) child!: AppliMeteoComponent
 
